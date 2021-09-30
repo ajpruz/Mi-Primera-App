@@ -1,10 +1,9 @@
 .title{
-    color: rgba(73,63,252,1);
+    color: white;
     width: max-content;
     border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    background: rgba(72, 63, 252, 0.199);
+    /* background: rgba(72, 63, 252, 0.199); */
+    
     }
 .title > h2 {
     margin: 20px;
@@ -12,7 +11,6 @@
 .line {
     width: 80%;
 }
-hr {
-    border: rgba(73,63,252,1) solid 1px;
-    background: rgba(72, 63, 252, 0.199);
-}
+/* hr {
+    /* border: rgba(73,63,252,1) solid 1px;
+    background: rgba(72, 63, 252, 0.199); */

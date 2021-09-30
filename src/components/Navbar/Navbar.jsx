@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="NavbarItems">
       <h1 className="navbar-logo">React <FontAwesomeIcon icon={faReact} /></h1>
       <div className="menu-icon" onClick={switchClicked}>
-      <FontAwesomeIcon  className={clicked ? 'faTimes' : 'faBars' } icon={clicked? faTimes : faBars} > </FontAwesomeIcon>
+      <FontAwesomeIcon  className={clicked ? 'faTimes' : 'faBars' } icon={clicked ? faTimes : faBars} > </FontAwesomeIcon>
       </div>  
         <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
           {MenuItems.map((item, index) => {

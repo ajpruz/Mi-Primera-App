@@ -1,10 +1,10 @@
 import React from 'react'
 import {  } from "./ItemListContainer.css";
 
-const ItemListContainer = () => {
+const ItemListContainer = ({saludo}) => {
     return (
         <div className='title'>        
-            <h2>BIENVENIDOS A MI PRIMERA APP</h2>
+            <h2>{saludo}</h2>
             <div className="line">
                 <hr />
                 <h3>CAMADA: 16960 - ALEXIS PORTILLO</h3>
