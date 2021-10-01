@@ -1,19 +1,21 @@
 import React from 'react'
-import {  } from "./ItemListContainer.css";
+import  "./ItemListContainer.css";
+import Card from "../Card/Card";
 
-const ItemListContainer = ({saludo}) => {
+
+const ItemListContainer = ({saludo, items, setItems}) => {
+
+    
     return (
-        <div className='title'>        
+        <div className='container'>
             <h2>{saludo}</h2>
-            <div className="line">
-                <hr />
-                <h3>CAMADA: 16960 - ALEXIS PORTILLO</h3>
-                <hr />
-                <p>
-                Desafío: Menú e-commerce
-                <br />
-                Desafío: Crea tu landing
-                </p>
+            <div>        
+                <section className=''>
+                    <Card 
+                    setItems={setItems} 
+                    items={items}
+                     />
+                </section>
             </div>
         </div>
     )
