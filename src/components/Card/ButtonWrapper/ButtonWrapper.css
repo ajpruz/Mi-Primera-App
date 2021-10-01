@@ -1,0 +1,81 @@
+.wrapper {
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    /* border: solid rgb(100, 94, 254) 2px; */
+    color: black;
+    background: transparent;
+    border-radius: 10px;
+    transition: 200ms ease-in, color 200ms ease-in;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.button-wrapper {
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    /* border: solid rgb(100, 94, 254) 2px; */
+    color: black;
+    background: transparent;
+    border-radius: 10px;
+    transition: 200ms ease-in, color 200ms ease-in;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+/* .button-wrapper:hover {
+    transition: all 0.3s ease-out;
+    background: linear-gradient(90deg, rgb(100, 94, 254) 30%, rgba(73,63,252,1) 100%);
+    color: white;
+    transition: 250ms;
+} */
+
+
+span {
+    font-size: 1.5rem;
+}
+.negative{
+    color: red;
+    animation: pulse 500ms ease-in-out;
+}
+.positive {
+    color: green;
+    animation: pulse 500ms ease-in-out;
+}
+@keyframes pulse{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+button {
+    border: none;
+    background: white;
+    box-shadow: 0px 0px 10px rgb(100, 94, 254);
+    font-weight: bold;
+    font-size: 1rem;
+    color: inherit;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 250ms ease-out,
+    transform 50ms ease-out;
+}
+button:hover {
+    transition: all 0.3s ease-out;
+    background: linear-gradient(90deg, rgb(100, 94, 254) 30%, rgba(73,63,252,1) 100%);
+    color: white;
+    transition: 250ms;
+}
+button:active {
+    transform: scale(0.9);
+}

@@ -1,16 +1,9 @@
-.title{
-    color: white;
-    width: max-content;
-    border-radius: 4px;
-    /* background: rgba(72, 63, 252, 0.199); */
-    
-    }
-.title > h2 {
-    margin: 20px;
+.container {
+    background: rgb(248, 248, 248);
 }
-.line {
-    width: 80%;
+.card {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 16rem));
+    gap: 2rem;
 }
-/* hr {
-    /* border: rgba(73,63,252,1) solid 1px;
-    background: rgba(72, 63, 252, 0.199); */
