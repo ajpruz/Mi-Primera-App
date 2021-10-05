@@ -7,7 +7,7 @@ import MenuItems from "./MenuItems";
 import './Navbar.css';
 
 
-const Navbar = ({items}) => {
+const Navbar = ({carrito}) => {
   
 
   const [clicked, setClicked] = useState(false)
@@ -29,7 +29,7 @@ const Navbar = ({items}) => {
               </li>)
           })}
         </ul>
-        <CartWidget items={items} />
+        <CartWidget carrito={carrito} />
     </nav>
   )
   
