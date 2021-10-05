@@ -13,7 +13,7 @@ const SIZES = [
 ]
 
 export const CartWidget = ({
-    items,
+    carrito,
     type,
     onClick,
     buttonStyle,
@@ -25,7 +25,7 @@ export const CartWidget = ({
     return (
         <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={onClick}
         type={type}>
-            <FontAwesomeIcon icon={faShoppingCart} /> <span>{items}</span>
+            <FontAwesomeIcon icon={faShoppingCart} /> <span>{carrito}</span>
         </button>
     )
 }

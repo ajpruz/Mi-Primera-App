@@ -3,18 +3,16 @@ import  "./ItemListContainer.css";
 import Card from "../Card/Card";
 
 
-const ItemListContainer = ({saludo, items, setItems}) => {
+const ItemListContainer = ({addToCardWidget}) => {
+
 
     
     return (
         <div className='container'>
-            <h2>{saludo}</h2>
+            <h2>{}</h2>
             <div>        
-                <section className=''>
-                    <Card 
-                    setItems={setItems} 
-                    items={items}
-                     />
+                <section>
+                    <Card addToCardWidget={addToCardWidget} />
                 </section>
             </div>
         </div>

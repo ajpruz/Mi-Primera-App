@@ -60,11 +60,11 @@ button {
     background: white;
     box-shadow: 0px 0px 10px rgb(100, 94, 254);
     font-weight: bold;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     color: inherit;
-    border-radius: 50%;
+    border-radius: 5px;
     height: 2rem;
-    width: 2rem;
+    width: 4rem;
     cursor: pointer;
     outline: none;
     transition: background-color 250ms ease-out,
@@ -78,4 +78,14 @@ button:hover {
 }
 button:active {
     transform: scale(0.9);
+}
+#addCart {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+}
+.addCart {
+    width: max-content;
+    border-radius: 5px;
+    align-content: center;
 }

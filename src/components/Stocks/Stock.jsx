@@ -1,5 +1,11 @@
 
-const stock = [{
+
+
+
+const stock = 
+  
+
+[{
     "id": 1,
     "img": "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
     "name": "Blackrock Enhanced Government Fund, Inc",
