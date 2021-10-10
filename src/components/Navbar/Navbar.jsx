@@ -5,6 +5,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { CartWidget } from "./NavComponents/CartWidget";
 import MenuItems from "./MenuItems";
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = ({carrito}) => {
@@ -15,7 +16,7 @@ const Navbar = ({carrito}) => {
   return (
     
     <nav className="NavbarItems">
-      <h1 className="navbar-logo">React <FontAwesomeIcon icon={faReact} /></h1>
+      <Link to="/"><h1 className="navbar-logo">React  <FontAwesomeIcon icon={faReact}  /></h1></Link>
       <div className="menu-icon" onClick={switchClicked}>
       <FontAwesomeIcon  className={clicked ? 'faTimes' : 'faBars' } icon={clicked ? faTimes : faBars} > </FontAwesomeIcon>
       </div>  
@@ -29,7 +30,9 @@ const Navbar = ({carrito}) => {
               </li>)
           })}
         </ul>
-        <CartWidget carrito={carrito} />
+        <Link to="/favoritos">
+        <CartWidget carrito={carrito}/>
+        </Link>
     </nav>
   )
   
